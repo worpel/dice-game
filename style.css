@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Quicksand|VT323');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+}
+
+.container {
+    margin: 100px auto;
+    width: 75vh;
+    height: 75vh;
+    border: 15px groove #00E8BB;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: VT323;
+    font-size: 3rem;
+    color: #09FFC3;
+}
+
+.title {
+    width: 100%;
+    font-family: Inconsolata;
+    font-size: 3rem;
+    animation: blink 3s linear infinite;
+}
+
+.title:hover {
+    transform: scale(1.5);
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        color: #09FFC3;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.players {
+    width: 100%;
+}
+
+.dice {
+    margin-top: 10px;
+    border: 2px groove #00E8BB;
+}
+
+.score1,
+.score2 {
+    font-size: 20px;
+    font-family: Quicksand;
+}
+
+.player-buttons {
+    width: 130%;
+    font-size: 3rem;
+    color: #09FFC3;
+}
+
+.fa-dice-six {
+    margin-left: 4px;
+}
+
+.fa-exchange-alt {
+    margin-left: -6px;
+}

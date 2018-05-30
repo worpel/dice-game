@@ -39,7 +39,7 @@ body {
     width: 100%;
     font-family: Inconsolata;
     font-size: 3rem;
-    animation: blink 3s linear infinite;
+    animation: blink 1s linear infinite;
 }
 
 .title:hover {
@@ -56,6 +56,12 @@ body {
     }
 }
 
+#activeplayer {
+    color: #09FFC3;
+    font-family: VT323;
+    font-size: 4rem;
+}
+
 .players {
     width: 100%;
 }
@@ -65,22 +71,26 @@ body {
     border: 2px groove #00E8BB;
 }
 
-.score1,
-.score2 {
+#score1,
+#score2,
+.scores {
     font-size: 20px;
     font-family: Quicksand;
 }
 
 .player-buttons {
-    width: 130%;
+    width: 54%;
+    display: block;
     font-size: 3rem;
     color: #09FFC3;
 }
 
-.fa-dice-six {
-    margin-left: 4px;
+#roll {
+    padding-left: 4px;
+    float: left;
 }
 
-.fa-exchange-alt {
-    margin-left: -6px;
+#swap {
+    padding-right: 1px;
+    float: right;
 }

@@ -79,18 +79,10 @@ body {
 }
 
 .player-buttons {
-    width: 54%;
-    display: block;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3rem;
     color: #09FFC3;
-}
-
-#roll {
-    padding-left: 4px;
-    float: left;
-}
-
-#swap {
-    padding-right: 1px;
-    float: right;
 }
